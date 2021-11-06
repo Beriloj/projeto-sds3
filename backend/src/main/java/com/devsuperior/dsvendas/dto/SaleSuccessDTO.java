@@ -1,6 +1,5 @@
 package com.devsuperior.dsvendas.dto;
 
-
 import java.io.Serializable;
 
 import com.devsuperior.dsvendas.entities.Seller;
@@ -8,33 +7,41 @@ import com.devsuperior.dsvendas.entities.Seller;
 public class SaleSuccessDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
-	private String sellername;
-	private Double sum;
+	private String sellerName;
+	private Long visited;
+	private Long deals;
 	
-	public SaleSuccessDTO() {
+	public SaleSuccessDTO( ) {
 	}
 
-	public SaleSuccessDTO(Seller seller, Double sum) {
-		this.sellername = seller.getName();
-		this.sum = sum;
+	public SaleSuccessDTO(Seller seller, Long visited, Long deals) {
+		sellerName = seller.getName();
+		this.setVisited(visited);
+		this.setDeals(deals);
 	}
 
-	public String getSellername() {
-		return sellername;
+	public String getSellerName() {
+		return sellerName;
 	}
 
-	public void setSellername(String sellername) {
-		this.sellername = sellername;
+	public void setSellerName(String sellerName) {
+		this.sellerName = sellerName;
 	}
 
-	public Double getSum() {
-		return sum;
+	public Long getVisited() {
+		return visited;
 	}
 
-	public void setSum(Double sum) {
-		this.sum = sum;
+	public void setVisited(Long visited) {
+		this.visited = visited;
 	}
-	
-	
 
-}
+	public Long getDeals() {
+		return deals;
+	}
+
+	public void setDeals(Long deals) {
+		this.deals = deals;
+	}
+
+}	
