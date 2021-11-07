@@ -13,10 +13,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dsvendas</name>
 	<description>Projeto desenvolvido durante a semana spring react da devsuperior</description>
-	<properties>
-		<java.version>11</java.version>
-	</properties>
-	<dependencies>
+	    
+		<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
